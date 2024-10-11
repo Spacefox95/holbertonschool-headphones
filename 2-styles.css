@@ -246,50 +246,6 @@ button {
 	margin-top: 40px;
 }
 
-/***** CONTACT US *****/
-
-#contact {
-	height: 600px;
-	width: 335px;
-	color: black;
-	display: flex;
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-}
-
-.form-contact h1 {
-	margin: auto;
-}
-
-.form-contact {
-	display: flex;
-	width: 335px;
-	flex-direction: column;
-	margin-top: 20px;
-	border: none;
-	justify-content: center;
-}
-
-.form-contact input {
-	font-size: 14px;
-	border: none;
-	border-bottom: 0.5px solid rgba(7, 22, 41, 1);
-}
-
-.form-contact button {
-	box-shadow: none;
-}
-
-/***** FOOTER ****/
-
-.foot {
-	background-color: rgba(7, 22, 41, 1);
-	width: 1400px;
-	height: 249px;
-	margin: auto;
-}
-
 /****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
 
