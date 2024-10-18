@@ -33,7 +33,7 @@ body {
 	background-color: var(--color-white);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: contain 800px;
+	background-size: 1400px 800px;
 }
 
 h1 {
@@ -183,7 +183,9 @@ button {
 /***** WHAT WE DO *****/
 #us {
 	color: black;
+	max-width: 1400px;
 	justify-content: center;
+	margin: auto;
 	text-align: center;
 	height: 700px;
 	padding-top: 200px;
@@ -215,15 +217,13 @@ button {
 
 /***** OUR RESULTS *****/
 #results {
-	width: 1400px;
 	margin: 100px auto 0 auto;
 	background-image: url(./images/headphones_hero_2.jpg);
 	background-color: var(--color-white);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 1400px 650px;
 	background-position: center;
 	text-align: center;
-	height: 650px;
 	padding-top: 120px;
 }
 
@@ -234,7 +234,7 @@ button {
 
 #penta {
 	display: flex;
-	width: 1000px;
+	max-width: 1000px;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -248,28 +248,15 @@ button {
 
 /****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
-
-	html,
-	body {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
 	body {
 		background-position: 35% top;
-		height: auto;
+		background-size: cover;
+		height: 869px;
 	}
 
-	h1 {
-		width: 357px;
-	}
-
-	/**** HEADER *****/
 	#header-banner {
 		position: relative;
 		justify-content: center;
-		width: 100%;
 	}
 
 	#header-banner img {
@@ -288,6 +275,24 @@ button {
 
 	nav {
 		display: none;
+	}
+
+	#banner {
+		margin-top: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 357px;
+		height: 436px;
+	}
+
+	#banner p {
+		width: 335px;
+	}
+
+	#banner h3 {
+		width: 279px;
+		margin: auto;
+		padding-top: 10px;
 	}
 
 	#toggle-menu:checked+.hamburger {
@@ -315,20 +320,6 @@ button {
 		padding: 20px 0;
 	}
 
-	/*** BANNER *****/
-	#banner {
-		margin-top: 100px;
-		text-align: center;
-		width: 100%;
-	}
-
-	#banner h1,
-	#banner h3,
-	#banner p {
-		margin: 0 auto;
-		max-width: 300px;
-	}
-
 	nav a {
 		padding: 10px;
 		color: var(--color-white);
@@ -339,31 +330,68 @@ button {
 		align-items: center;
 	}
 
-	#intro {
+	#us {
+		height: 1650px;
+		width: 325px;
+		justify-content: center;
+		margin: auto;
+	}
+
+	#speech {
+		width: 325px;
+	}
+
+	#speech p {
+		width: 325px;
+		margin: auto;
+	}
+
+	.logos {
+		gap: 70px;
+		width: 207px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/**** OUR RESULT ****/
+	#results {
+		background-position: center top;
+		width: 480px;
+		height: auto;
+	}
+
+	#res {
+		margin: auto;
 		width: 375px;
-		height: 182px;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	#intro p {
-		width: 335px;
-		height: 182px;
-		margin: auto;
+	#res h1 {
+		width: 266px;
+		height: 80px;
 	}
 
-	/**** WHAT WE DO *****/
-	#us {
-		width: 100%;
+	#res p {
+		width: 305px;
+		height: 208px;
 	}
 
-	#speech {
-		width: 100%;
+	#res p {
+		margin-bottom: 100px;
 	}
 
-	.logos {
+	#penta {
+		max-width: 480px;
 		display: flex;
+		gap: 50px;
 		flex-direction: column;
-		width: 100%;
+		background-color: rgba(7, 22, 41, 1);
+	}
+
+	#penta4 {
+		margin-bottom: 50px;
 	}
 }
