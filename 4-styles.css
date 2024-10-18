@@ -281,6 +281,44 @@ button {
 	box-shadow: none;
 }
 
+/***** FOOTER ****/
+
+footer {
+	background-color: rgba(7, 22, 41, 1);
+	width: 1400px;
+	height: 249px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+footer .foot {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	justify-content: space-between;
+}
+
+.foot .social {
+	display: flex;
+	flex-direction: row;
+	width: 130px;
+	height: 30px;
+	justify-content: space-between;
+}
+
+.foot #logo img {
+	width: 161px;
+	height: 32px;
+	margin-left: 200px;
+}
+
+.foot p {
+	color: rgba(255, 255, 255, 1);
+}
+
 /****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
 

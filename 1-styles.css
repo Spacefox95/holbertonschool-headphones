@@ -173,6 +173,12 @@ nav a {
 }
 
 @media (max-width: 480px) {
+	body {
+		background-position: 35% top;
+		background-size: cover;
+		height: 869px;
+	}
+
 	#header-banner {
 		position: relative;
 		justify-content: center;
@@ -230,47 +236,12 @@ nav a {
 	.hamburger {
 		align-items: center;
 	}
-}
 
-/***** WHAT WE DO *****/
-
-#us {
-	color: black;
-	justify-content: center;
-	text-align: center;
-	height: 700px;
-	padding-top: 200px;
-}
-
-#speech {
-	width: 637px;
-	margin: auto;
-}
-
-#us h1 {
-	font-size: 32px;
-}
-
-#us p {
-	font-size: 16px;
-	line-height: 26px;
-}
-
-.logos {
-	display: flex;
-	width: 1000px;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 100px;
-	margin: auto;
-}
-
-.logos h3 {
-	font-size: 18px;
-	line-height: 26px;
-}
-
-.logos p {
-	font-size: 14px;
+	#intro {
+		width: 375px;
+		height: 182px;
+		justify-content: center;
+		margin-left: 11px;
+		align-items: center;
+	}
 }
