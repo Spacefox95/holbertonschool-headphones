@@ -215,15 +215,13 @@ button {
 
 /***** OUR RESULTS *****/
 #results {
-	width: 1400px;
 	margin: 100px auto 0 auto;
 	background-image: url(./images/headphones_hero_2.jpg);
 	background-color: var(--color-white);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 1400px 650px;
 	background-position: center;
 	text-align: center;
-	height: 650px;
 	padding-top: 120px;
 }
 
@@ -283,6 +281,11 @@ button {
 
 /****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
+	body {
+		background-position: 35% top;
+		background-size: cover;
+		height: 869px;
+	}
 
 	#header-banner {
 		position: relative;
@@ -305,6 +308,24 @@ button {
 
 	nav {
 		display: none;
+	}
+
+	#banner {
+		margin-top: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 357px;
+		height: 436px;
+	}
+
+	#banner p {
+		width: 335px;
+	}
+
+	#banner h3 {
+		width: 279px;
+		margin: auto;
+		padding-top: 10px;
 	}
 
 	#toggle-menu:checked+.hamburger {
@@ -342,29 +363,73 @@ button {
 		align-items: center;
 	}
 
-	#banner {
-		margin-top: 150px;
+	#us {
+		height: 1650px;
+		width: 325px;
+		justify-content: center;
+		margin: auto;
 	}
 
-	#banner h1 {
-		font-size: 24px;
+	#speech {
+		width: 325px;
 	}
 
-	#banner h3 {
-		font-size: 14px;
-		margin-bottom: 30px;
+	#speech p {
+		width: 325px;
+		margin: auto;
 	}
 
-	#banner button {
-		width: 140px;
-		height: 40px;
+	.logos {
+		gap: 70px;
+		width: 207px;
+		display: flex;
+		flex-direction: column;
 	}
 
+	/**** OUR RESULT ****/
 	#results {
-		height: 869px;
+		background-position: center top;
+		width: 480px;
+		height: auto;
+	}
+
+	#res {
+		margin: auto;
 		width: 375px;
-		background-size: 375px 869px;
-		opacity: 0.9;
-		padding: 60px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#res h1 {
+		width: 266px;
+		height: 80px;
+	}
+
+	#res p {
+		width: 305px;
+		height: 208px;
+	}
+
+	#res p {
+		margin-bottom: 100px;
+	}
+
+	#penta {
+		max-width: 480px;
+		display: flex;
+		gap: 50px;
+		flex-direction: column;
+		background-color: rgba(7, 22, 41, 1);
+	}
+
+	#penta4 {
+		margin-bottom: 50px;
+	}
+
+	.form-contact {
+		margin-bottom: 30px;
+		border-color: rgba(7, 22, 41, 1);
 	}
 }
