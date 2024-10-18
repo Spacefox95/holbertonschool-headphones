@@ -249,9 +249,27 @@ button {
 /****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
 
+	html,
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background-position: 35% top;
+		height: auto;
+	}
+
+	h1 {
+		width: 357px;
+	}
+
+	/**** HEADER *****/
 	#header-banner {
 		position: relative;
 		justify-content: center;
+		width: 100%;
 	}
 
 	#header-banner img {
@@ -297,6 +315,20 @@ button {
 		padding: 20px 0;
 	}
 
+	/*** BANNER *****/
+	#banner {
+		margin-top: 100px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#banner h1,
+	#banner h3,
+	#banner p {
+		margin: 0 auto;
+		max-width: 300px;
+	}
+
 	nav a {
 		padding: 10px;
 		color: var(--color-white);
@@ -307,29 +339,31 @@ button {
 		align-items: center;
 	}
 
-	#banner {
-		margin-top: 150px;
-	}
-
-	#banner h1 {
-		font-size: 24px;
-	}
-
-	#banner h3 {
-		font-size: 14px;
-		margin-bottom: 30px;
-	}
-
-	#banner button {
-		width: 140px;
-		height: 40px;
-	}
-
-	#results {
-		height: 869px;
+	#intro {
 		width: 375px;
-		background-size: 375px 869px;
-		opacity: 0.9;
-		padding: 60px 0;
+		height: 182px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#intro p {
+		width: 335px;
+		height: 182px;
+		margin: auto;
+	}
+
+	/**** WHAT WE DO *****/
+	#us {
+		width: 100%;
+	}
+
+	#speech {
+		width: 100%;
+	}
+
+	.logos {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 }

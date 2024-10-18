@@ -33,8 +33,16 @@ body {
 	background-color: var(--color-white);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: auto;
-	height: 100vh;
+	background-size: contain 800px;
+}
+
+h1 {
+	font-size: var(--font-size-title);
+}
+
+p {
+	font-size: var(--font-siez-medium);
+	line-height: 26px;
 }
 
 button {
@@ -93,12 +101,12 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 280px;
+	margin-top: 310px;
 	justify-content: center;
+	height: 313px;
 }
 
 #banner h1 {
-	font-size: var(--font-size-title);
 	font-weight: 700;
 	text-align: center;
 	margin: 0;
@@ -106,16 +114,18 @@ nav a {
 
 #banner h3 {
 	margin-top: 0;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-size: var(--font-siez-medium);
 	text-align: center;
 }
 
-#banner button {
+button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: auto;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	color: var(--color-white);
 	background-color: var(--color-red);
 	border-radius: 22px;
@@ -130,8 +140,6 @@ nav a {
 
 #banner p {
 	margin-top: 70px;
-	line-height: 26px;
-	font-size: var(--font-siez-medium);
 	max-width: 635px;
 	text-align: center;
 }
@@ -172,6 +180,73 @@ nav a {
 	border-radius: 2px;
 }
 
+/***** WHAT WE DO *****/
+#us {
+	color: black;
+	justify-content: center;
+	text-align: center;
+	height: 700px;
+	padding-top: 200px;
+}
+
+#speech {
+	width: 637px;
+	margin: auto;
+}
+
+.logos {
+	display: flex;
+	width: 1000px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 100px;
+	margin: auto;
+}
+
+.logos h3 {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.logos p {
+	font-size: 14px;
+}
+
+/***** OUR RESULTS *****/
+#results {
+	width: 1400px;
+	margin: 100px auto 0 auto;
+	background-image: url(./images/headphones_hero_2.jpg);
+	background-color: var(--color-white);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 650px;
+	padding-top: 120px;
+}
+
+#res {
+	width: 637px;
+	margin: 0 auto;
+}
+
+#penta {
+	display: flex;
+	width: 1000px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	margin: auto;
+}
+
+#res p {
+	margin-top: 40px;
+}
+
+/****** MEDIA QUERIES ******/
 @media (max-width: 480px) {
 	body {
 		background-position: 35% top;
@@ -200,6 +275,24 @@ nav a {
 
 	nav {
 		display: none;
+	}
+
+	#banner {
+		margin-top: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 357px;
+		height: 436px;
+	}
+
+	#banner p {
+		width: 335px;
+	}
+
+	#banner h3 {
+		width: 279px;
+		margin: auto;
+		padding-top: 10px;
 	}
 
 	#toggle-menu:checked+.hamburger {
@@ -237,11 +330,28 @@ nav a {
 		align-items: center;
 	}
 
-	#intro {
-		width: 375px;
-		height: 182px;
+	#us {
+		height: 1680px;
+		width: 325px;
 		justify-content: center;
-		margin-left: 11px;
-		align-items: center;
+		margin: auto;
 	}
+
+	#speech {
+		width: 325px;
+	}
+
+	#speech p {
+		width: 325px;
+		margin: auto;
+	}
+
+	.logos {
+		gap: 70px;
+		width: 207px;
+		display: flex;
+		flex-direction: column;
+	}
+
+
 }
